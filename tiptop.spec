@@ -4,7 +4,7 @@
 #
 Name     : tiptop
 Version  : 2.3
-Release  : 8
+Release  : 9
 URL      : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.tar.gz
 Source0  : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.tar.gz
 Summary  : No detailed summary available
