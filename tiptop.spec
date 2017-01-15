@@ -4,7 +4,7 @@
 #
 Name     : tiptop
 Version  : 2.3
-Release  : 12
+Release  : 13
 URL      : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.tar.gz
 Source0  : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.tar.gz
 Summary  : No detailed summary available
@@ -16,6 +16,7 @@ BuildRequires : bison
 BuildRequires : flex
 BuildRequires : libxml2-dev
 BuildRequires : ncurses-dev
+Patch1: timestamp.patch
 
 %description
 Tiptop
@@ -42,15 +43,16 @@ doc components for the tiptop package.
 
 %prep
 %setup -q -n tiptop-2.3
+%patch1 -p1
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1484450729
+export SOURCE_DATE_EPOCH=1484451866
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1484450729
+export SOURCE_DATE_EPOCH=1484451866
 rm -rf %{buildroot}
 %make_install
 

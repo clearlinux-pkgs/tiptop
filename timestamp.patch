@@ -1,0 +1,13 @@
+--- tiptop-2.3/src/Makefile.in~	2015-07-08 08:32:55.000000000 +0000
++++ tiptop-2.3/src/Makefile.in	2017-01-15 03:42:08.826285475 +0000
+@@ -48,8 +48,8 @@
+ 
+ 
+ version.o: version.c
+-	$(CC) $(CFLAGS) -DCOMPILE_HOST="\""`hostname`"\"" \
+-                        -DCOMPILE_DATE="\"`date`\"" \
++	$(CC) $(CFLAGS) -DCOMPILE_HOST="\""localhost"\"" \
++                        -DCOMPILE_DATE="\"today\"" \
+                         -c $(srcdir)/version.c
+ 
+ 
