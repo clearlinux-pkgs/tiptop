@@ -4,7 +4,7 @@
 #
 Name     : tiptop
 Version  : 2.3
-Release  : 11
+Release  : 12
 URL      : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.tar.gz
 Source0  : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.tar.gz
 Summary  : No detailed summary available
@@ -44,10 +44,13 @@ doc components for the tiptop package.
 %setup -q -n tiptop-2.3
 
 %build
+export LANG=C
+export SOURCE_DATE_EPOCH=1484450729
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
 %install
+export SOURCE_DATE_EPOCH=1484450729
 rm -rf %{buildroot}
 %make_install
 
