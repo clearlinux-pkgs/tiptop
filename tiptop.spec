@@ -4,7 +4,7 @@
 #
 Name     : tiptop
 Version  : 2.3.1
-Release  : 19
+Release  : 20
 URL      : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.1.tar.gz
 Source0  : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.1.tar.gz
 Summary  : No detailed summary available
@@ -50,12 +50,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1507458289
+export SOURCE_DATE_EPOCH=1517682615
 %configure --disable-static
-make V=1  %{?_smp_mflags}
+make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1507458289
+export SOURCE_DATE_EPOCH=1517682615
 rm -rf %{buildroot}
 %make_install
 
