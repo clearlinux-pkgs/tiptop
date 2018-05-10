@@ -4,7 +4,7 @@
 #
 Name     : tiptop
 Version  : 2.3.1
-Release  : 20
+Release  : 21
 URL      : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.1.tar.gz
 Source0  : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.1.tar.gz
 Summary  : No detailed summary available
