@@ -4,9 +4,9 @@
 #
 Name     : tiptop
 Version  : 2.3.1
-Release  : 23
-URL      : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.1.tar.gz
-Source0  : http://tiptop.gforge.inria.fr/releases/tiptop-2.3.1.tar.gz
+Release  : 24
+URL      : https://files.inria.fr/pacap/tiptop/tiptop-2.3.1.tar.gz
+Source0  : https://files.inria.fr/pacap/tiptop/tiptop-2.3.1.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -61,20 +61,20 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1604355852
+export SOURCE_DATE_EPOCH=1657564935
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1604355852
+export SOURCE_DATE_EPOCH=1657564935
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/tiptop
 cp %{_builddir}/tiptop-2.3.1/COPYING %{buildroot}/usr/share/package-licenses/tiptop/4cc77b90af91e615a64ae04893fdffa7939db84c
