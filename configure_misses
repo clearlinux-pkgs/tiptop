@@ -1,5 +1,1 @@
-Configure miss: helpwin.c:64:3: warning: format not a string literal and no format arguments [-Wformat-security]
-
 Configure miss: linux/perf_counter.h
-Configure miss: linux/perf_counter.h presence
-Configure miss: linux/perf_counter.h usability
