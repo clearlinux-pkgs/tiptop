@@ -7,7 +7,7 @@
 #
 Name     : tiptop
 Version  : 2.3.2
-Release  : 26
+Release  : 27
 URL      : https://files.inria.fr/pacap/tiptop/tiptop-2.3.2.tar.gz
 Source0  : https://files.inria.fr/pacap/tiptop/tiptop-2.3.2.tar.gz
 Summary  : No detailed summary available
